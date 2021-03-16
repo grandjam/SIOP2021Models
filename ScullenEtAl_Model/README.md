@@ -3,20 +3,25 @@ The R code contained in this folder replicates the computational described in:
 
 > Scullen, S.E., Bergey, P.K., Aiman-Smith, L. (2005). Forced distribution rating systems and the improvement of workforce potential: A baseline simulation. *Personnel Psychology, 58,* 1-32.
  
-The basic premise of the model is to demonstrate how a large degree of gender stratificaiton can emerge at the upper levels of an organizational hierarchy as a result of very small biases in the performance evaluation ratings provided to males versus females that are used to make promotion decisions.
+The basic premise of the model is to demonstrate how characteristics of forced distribution rating systems (i.e., firing a certain percentage of employees in an organization each year) interact with the the reliability and validity of a selection system, the selection ratio, and an organization's turnover rate to impact workforce performance potential.
 
 ## Model pseudocode
-Martell et al. (1996) do not provide the exact pseudocode on which their model is based, but enough details are provided in the text to repliate the model. The basic steps carried out in the model are as follows:
+Scullen et al. (2005) provide the exact pseudocode on which their model is based in Table 1 of their paper. The basic steps carried out in the model are as follows:
 
-1. Create hierarchical organization with k levels
-2. Populate each organizational level with nk original employees
-3. Assign each employee a gender such that nmale = nfemale 
-4. Randomly assign each employee a performance evaluation score such that performancefemale ~ N(50,10) and performancemale ~ N(50,10) + bias
-5. Randomly select TO% of employees to turnover from the organization
-6. Determine if any open positions exist at level k and promote highest performing employees from level k-1 into openings
-7. Fill open positions in lowest organizational level with new hires using procedure in Steps 3 and 4
-8. If number of original employees > 0, return to Step 5
-9. End
+1. Initialize time clock t = 0
+2. Create 10 groups of 10 employees in each organization
+3. Create a voluntary turnover schedule for each firm
+4. Increment time clock t = t + 1
+5. Invoke volutnary turnover and immediate replacement schedule for period t
+6. Evaluate employees in accordance with Equation 3
+7. Rank employees by Rating
+8. Terminate employees with lowest Ratings
+9. Create new applicants for each opening
+10. Evaluate applicants in accordance with Equation 1
+11. Rank applicants by application score
+12. Hire applicants with highest application score
+13. If t < 30, then go to Step 4
+14. End
 
 Each step of the pseudocode is copied into the R code for the computational model so that the user can see how these model steps were implemented. Furthermore, the R code for the model is extensively commented to describe what each line of code accomplishes.
 
