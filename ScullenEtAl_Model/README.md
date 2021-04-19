@@ -1,5 +1,5 @@
 # Overview of compuational model
-The R code contained in this folder replicates the computational described in:
+The R code contained in this folder replicates the computational model described in:
 
 > Scullen, S.E., Bergey, P.K., Aiman-Smith, L. (2005). Forced distribution rating systems and the improvement of workforce potential: A baseline simulation. *Personnel Psychology, 58,* 1-32.
  
