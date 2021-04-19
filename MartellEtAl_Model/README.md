@@ -1,5 +1,5 @@
 # Overview of compuational model
-The R code contained in this folder replicates the computational described in:
+The R code contained in this folder replicates the computational model described in:
 
 > Martell, R.F., Lane, D.M., & Emrich, C. (1996). Male-female differences: A computer simulation. *American Psychologist, 51,* 157-158.
  
