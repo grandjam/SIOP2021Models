@@ -1,5 +1,5 @@
 # Supplemental Materials for SIOP 2021 Symposium on Computational Modeling
-This repository contains the full R code for two computational models that supplement the following presentation:
+This repository contains the  presentation slides and full R code for two computational models that supplement the following presentation:
 
 > Grand, J.A. (April, 2021). *Hello World! Tools, techniques, and getting started with computational modeling.* Symposium presentation at the 36th annual meeting of the Society for Industrial and Organizational Psychology, New Orleans, LA.
 
